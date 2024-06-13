@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Tests Check that app renders correctly 1`] = `
+<div
+  class="app"
+  data-testid="app"
+>
+  <div
+    class="content"
+  >
+    Frontend
+  </div>
+</div>
+`;
