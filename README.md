@@ -1,30 +1,50 @@
-# React + TypeScript + Vite
+# Aerobotics Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Specifications
+### Overview
+In this assignment you will need to build a simple web app to display a dashboard of tree
+survey data. To accomplish this, you will be given access to the Aerobotics API which will
+provide information about the different data types.
 
-Currently, two official plugins are available:
+Your submission will be evaluated on both code quality and overall UI/UX. The task is meant to
+be relatively open-ended so please take the initiative to design and build the app to the best of
+your ability.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### The Task
+Develop a Web Application
 
-## Expanding the ESLint configuration
+Build a single page web app that displays a table and histogram of tree survey information.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Technical requirements
+ - The application should be built with React JS + Typescript
+ - Farms, orchards and tree surveys need to be fetched from the Aerobotics Developers
+  API
+  Product requirements:
+ - User can view a table that includes the following columns:
+ - Farm name
+ - Orchard name
+ - Total trees surveyed
+ - Latest survey date
+ - Average NDVI
+ - Average NDRE
+ - User can click on the NDVI field in the table to view a histogram of NDVI values
+ - User can click on the NDRE field in the table to view a histogram of NDRE values
+ - [Bonus] When selecting a row in the table, overlay the tree survey lat/lng coordinates as points on a map.
 
-- Configure the top-level `parserOptions` property like this:
+### Submission
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+On submission, please send us a link to your source code (github, gitlab, etc) as well as a few
+screenshots or screen recording of the app in action.
+Relevant Context
+Aerobotics API
+In order to build your API, you will need to have the basic information about farms and
+orchards available to you. For this, you can make use of the Aerobotics API. You can navigate
+the public API documentation, the link is given at the bottom of this doc.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+# How To:
+## Commands
+  * `npm run start` - Start the Application.
+  * `npm run build` - Build the Application for Deployment.
+  * `npm run lint` - Ensure that your code is following the given standards.
+  * `npm run fix` - Possibly fix linting issues.
+
