@@ -1,6 +1,6 @@
 import fetch from "jest-fetch-mock";
 import { render, waitFor } from "@testing-library/react";
-import App from "../App";
+import { App } from "../App";
 
 describe("App Tests", () => {
 	beforeEach(() => {
