@@ -4,7 +4,7 @@ const authToken = process.env.VITE_REACT_APP_AUTH_TOKEN;
 
 const headers: HeadersInit = {
 	"Accept": "application/json",
-	"Authorization": authToken
+	"Authorization": authToken || ""
 };
 
 export const getFarms = async (): Promise<Farms> => {
