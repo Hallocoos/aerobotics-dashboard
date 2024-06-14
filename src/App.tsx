@@ -1,11 +1,7 @@
-/* eslint-disable react/react-in-jsx-scope */
+import { Navigation } from "./routes/Navigation";
 
-export default function App() {
+export function App() {
 	return (
-		<div className="app" data-testid="app">
-			<div className="content">
-				Frontend
-			</div>
-		</div>
+		<Navigation></Navigation>
 	);
 }
