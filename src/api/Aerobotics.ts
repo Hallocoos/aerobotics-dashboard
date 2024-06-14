@@ -1,6 +1,6 @@
 import { Farms } from "../interfaces/Api";
 
-const authToken = import.meta.env.VITE_REACT_APP_AUTH_TOKEN;
+const authToken = process.env.VITE_REACT_APP_AUTH_TOKEN;
 
 const headers: HeadersInit = {
 	"Accept": "application/json",
