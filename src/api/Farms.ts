@@ -20,7 +20,7 @@ export const getAllFarms = async (): Promise<Farms> => {
 };
 
 // TODO: Add params
-export const getFarmById = async (farm_id: number): Promise<Farm> => {
+export const getFarmById = async (farm_id: number | string): Promise<Farm> => {
 	const result: Farm = await fetch(
 		`/farming/farms/${farm_id}`,
 		{
