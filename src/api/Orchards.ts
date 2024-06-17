@@ -8,9 +8,9 @@ const headers: HeadersInit = {
 };
 
 // TODO: Add params
-export const getAllOrchards = async (): Promise<Orchards> => {
+export const getAllOrchards = async (farm_id?: number | string): Promise<Orchards> => {
 	const result: Orchards = await fetch(
-		"/farming/orchards/",
+		`/farming/orchards/${farm_id ? "?farm_id=" + farm_id : ""}`,
 		{
 			method: "GET",
 			headers: headers,

@@ -6,6 +6,7 @@ import { getAllOrchards } from "../api/Orchards";
 import { Orchards } from "../interfaces/Orchard";
 import { getAllSurveys } from "../api/Survey";
 import { Surveys } from "../interfaces/Survey";
+import { Link } from "react-router-dom";
 
 const totalTreesSurveyed = (surveys: Surveys, orchard_id: number): number => {
 	let total = 0;
@@ -68,9 +69,9 @@ export const FarmsTable = () => {
 									<td>{totalTreesSurveyed(surveys, orchard.id)}</td>
 									<td>{latestSurveyDate(surveys, orchard.id).toDateString()}</td>
 									<td><button type="button" className="btn btn-primary">
-										<a href={`/farm/${farmIdByOrchard(farms, orchard.farm_id)}`}>
+										<Link to={`farm/${farmIdByOrchard(farms, orchard.farm_id)}`}>
 											{"> Details"}
-										</a>
+										</Link>
 									</button></td>
 								</tr>
 							);
