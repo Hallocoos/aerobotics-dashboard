@@ -1,4 +1,4 @@
-import { fetchExponentialBackoff } from "../../api/ExponentialBackoff";
+import { fetchExponentialBackoff } from "../../helpers/ExponentialBackoff";
 
 const mockFnSuccess = async (): Promise<any> => {
 	return { status: "success" }

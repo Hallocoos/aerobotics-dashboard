@@ -1,7 +1,11 @@
-import { Navigation } from "./routes/Navigation";
+import Header from "./navigation/Header";
+import { Navigation } from "./navigation/Navigation";
 
 export function App() {
 	return (
-		<Navigation></Navigation>
+		<div>
+			<Header></Header>
+			<Navigation></Navigation>
+		</div>
 	);
 }

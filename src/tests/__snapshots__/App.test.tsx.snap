@@ -8,7 +8,187 @@ exports[`App Tests Check that app renders correctly 1`] = `
   <div
     class="content"
   >
-    Frontend
+    <table
+      class="table table-striped table-bordered table-hover"
+    >
+      <thead>
+        <tr>
+          <th>
+            Farm Name
+          </th>
+          <th>
+            Orchard name
+          </th>
+          <th>
+            Total trees surveyed
+          </th>
+          <th>
+            Latest survey date
+          </th>
+          <th>
+            Details
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            farm 1
+          </td>
+          <td>
+            wethwerthwerhwerh
+          </td>
+          <td>
+            6
+          </td>
+          <td>
+            Wed Jan 01 2020
+          </td>
+          <td>
+            <button
+              class="btn btn-primary"
+              type="button"
+            >
+              <a
+                href="/farm/1"
+              >
+                &gt; Details
+              </a>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            farm 1
+          </td>
+          <td>
+            wherhwerwerhwerh
+          </td>
+          <td>
+            6
+          </td>
+          <td>
+            Wed Jan 01 2020
+          </td>
+          <td>
+            <button
+              class="btn btn-primary"
+              type="button"
+            >
+              <a
+                href="/farm/1"
+              >
+                &gt; Details
+              </a>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            farm 2
+          </td>
+          <td>
+            xvbcxcvbxcvb
+          </td>
+          <td>
+            3
+          </td>
+          <td>
+            Sun Feb 02 2020
+          </td>
+          <td>
+            <button
+              class="btn btn-primary"
+              type="button"
+            >
+              <a
+                href="/farm/2"
+              >
+                &gt; Details
+              </a>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            farm 2
+          </td>
+          <td>
+            xcvbxcv xcvb
+          </td>
+          <td>
+            3
+          </td>
+          <td>
+            Sun Feb 02 2020
+          </td>
+          <td>
+            <button
+              class="btn btn-primary"
+              type="button"
+            >
+              <a
+                href="/farm/2"
+              >
+                &gt; Details
+              </a>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            farm 3
+          </td>
+          <td>
+            qazxxqazxqaz
+          </td>
+          <td>
+            2
+          </td>
+          <td>
+            Tue Mar 03 2020
+          </td>
+          <td>
+            <button
+              class="btn btn-primary"
+              type="button"
+            >
+              <a
+                href="/farm/3"
+              >
+                &gt; Details
+              </a>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            farm 3
+          </td>
+          <td>
+            xqazzxqaqazx
+          </td>
+          <td>
+            2
+          </td>
+          <td>
+            Tue Mar 03 2020
+          </td>
+          <td>
+            <button
+              class="btn btn-primary"
+              type="button"
+            >
+              <a
+                href="/farm/3"
+              >
+                &gt; Details
+              </a>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>
 `;
