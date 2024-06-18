@@ -1,5 +1,14 @@
 # Aerobotics Dashboard
 
+# How To:
+## Commands
+  * `make fresh` - Do a clean npm install.
+  * `make/make start` - Start the Application.
+  * `make lint` - Ensure is following linting standards.
+  * `make fix` - Fix specific linting issues.
+  * `make test` - Run Jest testing suite.
+  * `make update` - Update test snapshots.
+
 ## Project Specifications
 ### Overview
 In this assignment you will need to build a simple web app to display a dashboard of tree
@@ -40,11 +49,4 @@ Aerobotics API
 In order to build your API, you will need to have the basic information about farms and
 orchards available to you. For this, you can make use of the Aerobotics API. You can navigate
 the public API documentation, the link is given at the bottom of this doc.
-
-# How To:
-## Commands
-  * `npm run start` - Start the Application.
-  * `npm run build` - Build the Application for Deployment.
-  * `npm run lint` - Ensure that your code is following the given standards.
-  * `npm run fix` - Possibly fix linting issues.
 
