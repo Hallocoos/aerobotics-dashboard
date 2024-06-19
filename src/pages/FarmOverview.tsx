@@ -90,8 +90,8 @@ export const FarmOverview = () => {
 				<BarChart
 					width={1000}
 					height={500}
-					// data={orchardSurveys.map((orchardSurvey) => ({ ndvi: orchardSurvey.ndvi, ndre: orchardSurvey.ndre, lat: orchardSurvey.lat, lng: orchardSurvey.lng })).sort(sortAverages)} // very ugly
-					data={averages.sort(sortAverages)} // only relatively ugly
+					data={orchardSurveys.map((orchardSurvey) => ({ ndvi: orchardSurvey.ndvi, ndre: orchardSurvey.ndre, lat: orchardSurvey.lat, lng: orchardSurvey.lng })).sort(sortAverages)} // very ugly
+				// data={averages.sort(sortAverages)} // only relatively ugly
 				>
 					<CartesianGrid strokeDasharray="3 3" />
 					<XAxis dataKey="name" />
