@@ -20,4 +20,4 @@ start:
 
 fresh:
 	rm -rf node_modules/
-	npm i
+	npm ci
