@@ -53,11 +53,11 @@ export const FarmOverview = () => {
 			});
 	}, [surveys]);
 
-	const averages = Object.entries(groupByCoordinates(orchardSurveys)).map(([key, items]) => {
-		const averageNdre = (items as TreeSurvey[]).reduce((sum: number, item: TreeSurvey) => sum + item.ndre, 0) / (items as TreeSurvey[]).length;
-		const averageNdvi = (items as TreeSurvey[]).reduce((sum: number, item: TreeSurvey) => sum + item.ndvi, 0) / (items as TreeSurvey[]).length;
-		return { name: key, ndre: averageNdre, ndvi: averageNdvi } as Average;
-	});
+	// const averages = Object.entries(groupByCoordinates(orchardSurveys)).map(([key, items]) => {
+	// 	const averageNdre = (items as TreeSurvey[]).reduce((sum: number, item: TreeSurvey) => sum + item.ndre, 0) / (items as TreeSurvey[]).length;
+	// 	const averageNdvi = (items as TreeSurvey[]).reduce((sum: number, item: TreeSurvey) => sum + item.ndvi, 0) / (items as TreeSurvey[]).length;
+	// 	return { name: key, ndre: averageNdre, ndvi: averageNdvi } as Average;
+	// });
 
 	const sortAverages = (a: Average, b: Average) => {
 		if (sort == "ndre") {
